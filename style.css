@@ -1,0 +1,239 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+  
+background:
+    radial-gradient(ellipse at top, #174b70 0%, transparent 55%),
+    linear-gradient(135deg, #080d18 0%, #101827 50%, #070910 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    color: #ff4545;
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px rgba(255, 69, 69, 0.65);
+}
+}
+
+#game {
+    position: relative;
+    max-width: 850px;
+    height: 350px;
+    margin: 25px auto;
+    background: linear-gradient(#202b43, #10131c);
+ border: 2px solid #35bfff;
+box-shadow: 0 0 20px rgba(53, 191, 255, 0.25);
+border-radius: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#multiplier {
+    color: #ff4545;
+    font-size: 52px;
+    margin-top: 35px;
+}
+
+#plane {
+    position: absolute;
+    left: 10%;
+    bottom: 50px;
+    font-size: 55px;
+    color: #ff4545;
+    transform: rotate(-15deg);
+}
+
+#status {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #cbd5e1;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#startButton {
+    background: #ff4545;
+    color: white;
+}
+
+#cashOutButton {
+    background: #20c878;
+    color: #071b12;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#points {
+    color: #20c878;
+}
+/* RAMA MONEY MAKER visual upgrade */
+
+#game {
+    background:
+        radial-gradient(ellipse at bottom, #183d52 0%, #10131c 70%);
+    box-shadow: 0 0 35px rgba(255, 69, 69, 0.4);
+}
+
+#multiplier {
+    color: #ff4545;
+    text-shadow: 0 0 18px rgba(255, 69, 69, 0.65);
+    font-weight: bold;
+}
+
+#plane {
+    filter: drop-shadow(0 0 12px rgba(255, 69, 69, 0.8));
+}
+
+#startButton,
+#cashOutButton {
+    min-width: 160px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+#startButton:hover,
+#cashOutButton:hover {
+    transform: scale(1.04);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#points {
+    font-size: 24px;
+    font-weight: bold;
+}
+#historyPanel {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 15px;
+    background: #1b2232;
+    border: 1px solid #303c54;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#historyPanel h3 {
+    color: #ff4545;
+    text-align: center;
+}
+
+#historyList {
+    padding-left: 25px;
+    color: #d7deeb;
+}
+
+#historyList li {
+    padding: 6px;
+    border-bottom: 1px solid #303c54;
+}
+/* Virtual balance card */
+
+.balance-card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 22px;
+    background: linear-gradient(135deg, #202c40, #172033);
+    border: 1px solid #3c4b64;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.balance-card p:first-child {
+    color: #a9b8ce;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.balance-card h2 {
+    color: #25df91;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.balance-card small {
+    font-size: 14px;
+    color: #a9b8ce;
+}
+
+.balance-card p:last-child {
+    color: #a9b8ce;
+    font-size: 12px;
+}
+/* Smooth curved flight animation */
+
+#plane {
+    transition: left 0.12s linear, bottom 0.12s linear;
+    will-change: left, bottom;
+}
+
+#game {
+    position: relative;
+    overflow: hidden;
+}
+
+#plane {
+    z-index: 2;
+    transform: rotate(-15deg);
+}
+/* Leaderboard design */
+
+#leaderboard {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #202c40, #172033);
+    border: 1px solid #3c4b64;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+#leaderboard h2 {
+    color: #25df91;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.leader-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 8px;
+    border-bottom: 1px solid #3c4b64;
+    color: #ffffff;
+}
+
+.leader-row:last-child {
+    border-bottom: none;
+}
+
+.leader-row strong {
+    color: #25df91;
+}
